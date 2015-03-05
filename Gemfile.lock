@@ -107,7 +107,6 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (~> 3.3.3)
-  coffee-rails (~> 4.0.0)
   jquery-rails
   rails (= 4.1.6)
   sass-rails (~> 4.0.3)
