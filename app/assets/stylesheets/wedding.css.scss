@@ -1,8 +1,49 @@
-body { padding-top: 50px; }
+h1 {
+  padding-bottom: 40px;
+}
+
+.navbar {
+  background: rgba(0,0,0,0.8);
+  border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #E6E6E6;
+}
+.navbar .brand, .navbar .nav > li > a:hover {
+  color: #ADADAD;
+}
+.navbar-default .navbar-brand {
+  color: #E6E6E6;
+}
 
 .cover {
   color: rgb(255, 255, 255);
   position: relative;
-  min-height: 400px;
-  background: image-url("cover.jpg") no-repeat scroll 40% 0 / cover transparent;
+  min-height: 500px;
+  background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)); /* For Firefox 3.6 to 15 */
+  background:
+    linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    image-url("cover.jpg") no-repeat scroll 40% 0 / cover transparent;
+}
+
+.section {
+  margin: 40px 0 60px 0;
+}
+
+.section-blue {
+  background-color: #c8fff8 
+}
+
+#welcome-text {
+  font-family: 'Ubuntu', sans-serif;
+  z-index: 100;
+  position: absolute;
+  color: #D9D9D9;
+  font-size: 2.0em;
+  width: 100%;
+  text-align: center;
+  bottom: 250px;
 }

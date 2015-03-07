@@ -1,6 +1,14 @@
-<div class="cover"></div>
+<div class="cover">
+  <div id="welcome-text">
+    <div class="col-sm-6 col-sm-offset-3">
+      Please join Becky and Nick on October 24, 2015 as we celebrate our wedding in Lincoln, MA.
+    </div>
+  </div>
+</div>
 
-<div id="test">some text</div>
+<div class="container">
+  <%= render 'our_story' %>
+</div>
 
 <br><br><br><br>
 <br><br><br><br>
@@ -14,8 +22,12 @@
 <script>
 $('a').click(function() {
   $('html, body').animate( {
-    scrollTop: $( $.attr(this, 'href') ).offset().top
-  }, 500);
+    scrollTop: $( $.attr(this, 'href') ).offset().top - 40
+  }, 600);
   return false;
 });
+
+$(window).resize(function() {
+        $('.cover').height($(window).height());
+        }).resize();
 </script>
