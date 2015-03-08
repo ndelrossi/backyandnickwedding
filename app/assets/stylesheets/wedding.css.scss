@@ -3,18 +3,12 @@ h1 {
 }
 
 .navbar {
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.7);
   border: none;
 }
 
-.navbar-default .navbar-nav > li > a {
-  color: #E6E6E6;
-}
-.navbar .brand, .navbar .nav > li > a:hover {
-  color: #ADADAD;
-}
-.navbar-default .navbar-brand {
-  color: #E6E6E6;
+.navbar-inverse .navbar-brand {
+  color: white;
 }
 
 .cover {
@@ -38,7 +32,6 @@ h1 {
 }
 
 #welcome-text {
-  font-family: 'Ubuntu', sans-serif;
   z-index: 100;
   position: absolute;
   color: #D9D9D9;
@@ -47,3 +40,20 @@ h1 {
   text-align: center;
   bottom: 250px;
 }
+
+#location-cover {
+  position: relative;
+  min-height: 400px;
+  background: image-url("codman-garden.jpg") no-repeat scroll 40% 0 / cover transparent;
+
+  h1 {
+    z-index: 100;
+    position: absolute;
+    color: #D9D9D9;
+    width: 100%;
+    text-align: center;
+    bottom: 50px;
+  }
+}
+
+#gmap iframe, #gmap object, #gmap embed { width: 100%; }
