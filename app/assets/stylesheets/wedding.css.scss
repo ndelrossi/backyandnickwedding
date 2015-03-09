@@ -1,5 +1,5 @@
 h1 {
-  padding-bottom: 40px;
+  padding: 20px 0 40px 0;
 }
 
 .navbar {
@@ -42,6 +42,7 @@ h1 {
 }
 
 #location-cover {
+  margin-top: 10px;
   position: relative;
   min-height: 400px;
   background: image-url("codman-garden.jpg") no-repeat scroll 40% 0 / cover transparent;
