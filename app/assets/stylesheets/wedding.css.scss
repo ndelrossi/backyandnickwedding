@@ -58,9 +58,10 @@ h1 {
   min-height: 400px;
 }
 
-#location-cover { background: image-url("codman-garden.jpg") no-repeat scroll 40% 0 / cover transparent; }
+#wedding-info-cover { background: image-url("codman-garden.jpg") no-repeat scroll 40% 0 / cover transparent; }
 #wedding-party-cover { background: image-url("wedding-party.jpg") no-repeat scroll 40% 0 / cover transparent; }
 #gifts-cover { background: image-url("aruba.jpg") no-repeat scroll 40% 0 / cover transparent; }
+#accommodations-cover { background: image-url("accommodations.jpg") no-repeat scroll 40% 0 / cover transparent; }
 
 #gmap iframe, #gmap object, #gmap embed { width: 100%; }
 
@@ -74,4 +75,12 @@ h1 {
 
 .carousel-caption {
   font-size: 1.3em;
+}
+
+.bio {
+  margin-bottom: 30px;
+}
+
+.hotels {
+  margin-top: 30px;
 }

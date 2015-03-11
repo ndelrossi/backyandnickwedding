@@ -8,15 +8,17 @@
 </div>
 
 <%= render 'our_story' %>
-<%= render 'location' %>
+<%= render 'wedding_info' %>
+<%= render 'more_info' %>
 <%= render 'wedding_party' %>
+<%= render 'accommodations' %>
 <%= render 'gifts' %>
 
 
 <script>
 $('a').click(function() {
   $('html, body').animate( {
-    scrollTop: $( $.attr(this, 'href') ).offset().top - 40
+    scrollTop: $( $.attr(this, 'href') ).offset().top - 39
   }, 600);
   return false;
 });
