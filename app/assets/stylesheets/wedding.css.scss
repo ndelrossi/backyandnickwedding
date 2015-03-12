@@ -84,3 +84,16 @@ h1 {
 .hotels {
   margin-top: 30px;
 }
+
+.carousel-caption {
+  left: 10%;
+  right: 10%;
+  bottom: 10px;
+
+  p {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+}
+
+.carousel-indicators { bottom: 5px; }
