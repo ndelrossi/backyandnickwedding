@@ -26,12 +26,6 @@
         <p>Arenal volcano - Costa Rica</p>
       </div>
     </div>
-    <div class="item">
-      <%= image_tag("slide_becky_murray.jpg") %>
-      <div class="carousel-caption">
-        <p>Groomsman Mike stealing Becky</p>
-      </div>
-    </div>
   </div>
 
   <!-- Controls -->
@@ -42,16 +36,16 @@
     <span class="glyphicon glyphicon-chevron-right" href="#"></span>
   </a>
 </div> <!-- Carousel -->
-<script>
 
+<script>
 $('.carousel').carousel({
-interval: false
+  interval: false
 })
 $('.carousel-control.left').click(function() {
-      $('#carousel-our-story').carousel('prev');
-      });
+  $('#carousel-our-story').carousel('prev');
+});
 
 $('.carousel-control.right').click(function() {
-      $('#carousel-our-story').carousel('next');
-      });
+  $('#carousel-our-story').carousel('next');
+});
 </script>
