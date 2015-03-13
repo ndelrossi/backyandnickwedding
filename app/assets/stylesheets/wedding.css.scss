@@ -2,6 +2,9 @@ body { font-size: 1.5em; }
 
 h1 { padding: 20px 0 50px 0; }
 
+dt { padding-bottom: 2px; }
+dd { padding-bottom: 10px; }
+
 .navbar {
   background: rgba(0,0,0,0.8);
   border: none;
@@ -44,6 +47,9 @@ h1 { padding: 20px 0 50px 0; }
 }
 
 .section { margin: 70px 0 90px 0; }
+
+#wedding-info { margin-bottom: 50px; }
+#more-info {margin-top: 0; }
 
 .section-cover {
   margin: 10px 0 50px 0;
