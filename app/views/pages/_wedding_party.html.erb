@@ -83,7 +83,8 @@
       </div>
       <div class="media-body media-middle">
         <h4 class="media-heading">Mike Murray</h4>
-        Groomsman
+        Groomsman<br>
+        Justice of the Peace
       </div>
     </div>
     <div class="media party-right">
@@ -115,7 +116,7 @@
     </div>
     <div class="media party-right">
       <div class="media-left">
-        <%= image_tag("michaelbrunell.jpg", class: "media-object img-circle") %>
+        <%= image_tag("michaelbrunell.jpg", id: "dickie", class: "media-object img-circle") %>
       </div>
       <div class="media-body media-middle">
         <h4 class="media-heading">Michael Brunell</h4>
@@ -133,3 +134,14 @@
     </div>
   </div>
 </div>
+
+<script>
+
+$(function () {
+  $('#dickie').hover( function () {
+    $(this).attr('src', $(this).attr('src').replace(/\.jpg/, '-hidden.jpg') );
+  }, function() {
+    $(this).attr('src', $(this).attr('src').replace(/-hidden\.jpg/, '.jpg') );
+  });
+});
+</script>
