@@ -1,5 +1,7 @@
 body { font-size: 1.5em; }
 
+p { Margin-bottom: 20px; }
+
 h1 { padding: 20px 0 50px 0; }
 
 dt { padding-bottom: 2px; }
@@ -59,8 +61,9 @@ dd { padding-bottom: 10px; }
 
 #wedding-info-cover { background: image-url("codman-garden.jpg") no-repeat scroll 40% 0 / cover transparent; }
 #wedding-party-cover { background: image-url("wedding-party.jpg") no-repeat scroll 40% 0 / cover transparent; }
-#gifts-cover { background: image-url("aruba.jpg") no-repeat scroll 40% 0 / cover transparent; }
 #accommodations-cover { background: image-url("accommodations.jpg") no-repeat scroll 40% 0 / cover transparent; }
+#gifts-cover { background: image-url("aruba.jpg") no-repeat scroll 40% 0 / cover transparent; }
+#contact-cover { background: image-url("contact.jpg") no-repeat scroll 60% 0 / cover transparent; }
 
 #gmap iframe, #gmap object, #gmap embed { width: 100%; }
 
