@@ -1,11 +1,15 @@
 body { font-size: 1.5em; }
 
-p { Margin-bottom: 20px; }
+p { margin-bottom: 20px; }
 
 h1 { padding: 20px 0 50px 0; }
 
 dt { padding-bottom: 2px; }
 dd { padding-bottom: 10px; }
+
+#gifts {
+  p { margin-bottom: 10px; }
+}
 
 .navbar {
   background: rgba(0,0,0,0.8);
