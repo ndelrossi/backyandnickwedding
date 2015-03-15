@@ -70,6 +70,7 @@ dd { padding-bottom: 10px; }
 
 .party-left { padding-right: 30px; }
 .party-right { padding-left: 30px; }
+.bio { margin-bottom: 30px; }
 .bio-more {
   padding-top: 10px;
   max-width: 300px;
@@ -78,9 +79,11 @@ dd { padding-bottom: 10px; }
 }
 .popover { max-width: 500px; }
 
-.carousel-caption { font-size: 1.3em; }
+#dickie-hidden {
+  display: none;
+}
 
-.bio { margin-bottom: 30px; }
+.carousel-caption { font-size: 1.3em; }
 
 .hotels { margin-top: 20px; }
 

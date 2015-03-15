@@ -143,6 +143,9 @@
         <%= image_tag("michaelbrunell.jpg", id: "dickie", class: "media-object img-circle bio-image",
                       data: { toggle: "popover", placement: "bottom",
                               content: "Michael \"Dickie\" Brunell and the groom met while working at Papa Ginos over a decade ago." }) %>
+        <%= image_tag("michaelbrunell-hidden.jpg", id: "dickie-hidden", class: "media-object img-circle bio-image",
+                      data: { toggle: "popover", placement: "bottom",
+                              content: "Michael \"Dickie\" Brunell and the groom met while working at Papa Ginos over a decade ago." }) %>
       </div>
       <div class="media-body media-middle">
         <h4 class="media-heading">Michael Brunell</h4>
@@ -167,9 +170,8 @@
 
 $(function () {
   $('#dickie').hover( function () {
-    $(this).attr('src', $(this).attr('src').replace(/michaelbrunell/, 'michaelbrunell-hidden') );
-  }, function() {
-    $(this).attr('src', $(this).attr('src').replace(/michaelbrunell-hidden/, 'michaelbrunell') );
+    $(this).hide();
+    $('#dickie-hidden').show();
   });
 });
 $(function () {
