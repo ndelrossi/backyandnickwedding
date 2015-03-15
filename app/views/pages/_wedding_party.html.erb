@@ -9,7 +9,8 @@
         Maid of Honor
       </div>
       <div class="media-right">
-        <%= image_tag("ashleychamplin.jpg", class: "media-object img-circle") %>
+        <%= image_tag("ashleychamplin.jpg", class: "media-object img-circle bio-image",
+            data: { toggle: "popover", placement: "bottom", content: "Ashley is Becky's sister and she is so amazing! She is a teacher and coaches basketball." }) %>
       </div>
     </div>
     <div class="media party-left">
@@ -18,7 +19,8 @@
         Maid of Honor
       </div>
       <div class="media-right">
-        <%= image_tag("michaelachamplin.jpg", class: "media-object img-circle") %>
+        <%= image_tag("michaelachamplin.jpg", class: "media-object img-circle bio-image",
+            data: { toggle: "popover", placement: "bottom", content: "Michaela is Becky's sister and she is so amazing! She is a teacher and coaches basketball." }) %>
       </div>
     </div>
     <div class="media party-left">
@@ -142,6 +144,13 @@ $(function () {
     $(this).attr('src', $(this).attr('src').replace(/\.jpg/, '-hidden.jpg') );
   }, function() {
     $(this).attr('src', $(this).attr('src').replace(/-hidden\.jpg/, '.jpg') );
+  });
+});
+$(function () {
+  $('.bio-image').hover( function () {
+    $( this ).popover('show');
+  }, function() {
+    $( this ).popover('hide');
   });
 });
 </script>
