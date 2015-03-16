@@ -31,6 +31,12 @@ dd { padding-bottom: 10px; }
   background:
     linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
     image-url("cover.jpg") no-repeat scroll 40% 0 / cover transparent;
+
+  @media all and (max-width: 600px) {
+    background:
+      linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+      image-url("cover-small.jpg") no-repeat scroll 40% 0 / cover transparent;
+  }
 }
 
 #welcome-text {
@@ -60,7 +66,11 @@ dd { padding-bottom: 10px; }
 .section-cover {
   margin: 10px 0 50px 0;
   position: relative;
-  min-height: 400px;
+  height: 400px;
+
+  @media all and (max-width: 600px) {
+    height: 250px;
+  }
 }
 
 #wedding-info-cover { background: image-url("codman-garden.jpg") no-repeat scroll 40% 0 / cover transparent; }
@@ -68,6 +78,14 @@ dd { padding-bottom: 10px; }
 #accommodations-cover { background: image-url("accommodations.jpg") no-repeat scroll 40% 0 / cover transparent; }
 #gifts-cover { background: image-url("aruba.jpg") no-repeat scroll 40% 0 / cover transparent; }
 #contact-cover { background: image-url("contact.jpg") no-repeat scroll 60% 0 / cover transparent; }
+
+@media all and (max-width: 600px) {
+  #wedding-info-cover { background: image-url("codman-garden-small.jpg") no-repeat scroll 40% 0 / cover transparent; }
+  #wedding-party-cover { background: image-url("wedding-party-small.jpg") no-repeat scroll 40% 0 / cover transparent; }
+  #accommodations-cover { background: image-url("accommodations-small.jpg") no-repeat scroll 40% 0 / cover transparent; }
+  #gifts-cover { background: image-url("aruba-small.jpg") no-repeat scroll 40% 0 / cover transparent; }
+  #contact-cover { background: image-url("contact-small.jpg") no-repeat scroll 60% 0 / cover transparent; }
+}
 
 #gmap iframe, #gmap object, #gmap embed { width: 100%; }
 
