@@ -26,5 +26,10 @@ $('a').click(function() {
 
 $( document ).ready(function() {
   $('.cover').height($(window).height());
+  // timeout for iPad loading issue
+  setTimeout(function() {
+    $('.cover').height($(window).height());
+  }, 2000);
 });
+
 </script>
