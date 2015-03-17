@@ -97,7 +97,7 @@
       <div class="media-left party-right">
         <%= image_tag("mikemurray.jpg", class: "media-object img-circle bio-image",
                       data: { toggle: "popover", placement: "bottom",
-                              content: "Mike and the groom began their relationship as bitter enemies, arguing over which server tool groomsman Michael Brunell should use to connect to the computer game Counter-Strike. Eventually they were able to form a mutual respect for each other and became friends. Mike and the groom ended up living together in two locations in Worcester. He is dating bridesmaid Taylor and has a boston terrier name Duncan. Mike will also be marrying Becky and Nick." }) %>
+                              content: "Mike and the groom began their relationship as bitter enemies, arguing over which server tool groomsman Michael Brunell should use to connect to the computer game Counter-Strike. Eventually they were able to form a mutual respect for each other and became friends. Mike and the groom ended up living together in two locations in Worcester. He is dating bridesmaid Taylor and together they are parents to an unsightly dog-child named named Duncan. Mike will also be marrying Becky and Nick." }) %>
       </div>
       <div class="media-body media-middle">
         <h4 class="media-heading">Mike Murray</h4>
@@ -131,7 +131,7 @@
       <div class="media-left">
         <%= image_tag("joecarbeau.jpg", class: "media-object img-circle bio-image",
                       data: { toggle: "popover", placement: "bottom",
-                              content: "Joe grew up two houses down from the groom in Burlington. They met when Nick was 2 years old and have been great friends ever since." }) %>
+                              content: "Joe grew up two houses down from the groom in Burlington, MA. They met when Nick was three years old and have been great friends ever since. Joe and the groom spent their teenage years playing basketball and eating big meals. Rumor has it Joe can still easily dunk a basketball. He is also a gentleman-scholar and a world-renowned expert on 1990s boy bands." }) %>
       </div>
       <div class="media-body media-middle">
         <h4 class="media-heading">Joe Carbeau</h4>
@@ -143,7 +143,7 @@
         <%= image_tag("michaelbrunell.jpg", id: "dickie", class: "media-object img-circle bio-image") %>
         <%= image_tag("michaelbrunell-hidden.jpg", id: "dickie-hidden", class: "media-object img-circle bio-image",
                       data: { toggle: "popover", placement: "bottom",
-                              content: "Michael \"Dickie\" Brunell and the groom met while working at Papa Ginos over a decade ago." }) %>
+                              content: "Michael \“Dickie\” Brunell and the groom met while working at Papa Ginos in Worcester over a decade ago. Nick knew instantly after Dickie was hired that they would become great friends but convincing Dickie of that took weeks of negotiations. Eventually both sides were able to agree to the contract terms and the famous friendship deal pictured above was struck. The deal is set to expire a month before the wedding but hopefully both sides can agree on a contract extension." }) %>
       </div>
       <div class="media-body media-middle">
         <h4 class="media-heading">Michael Brunell</h4>
@@ -154,7 +154,7 @@
       <div class="media-left">
         <%= image_tag("yavuzkiremit.jpg", class: "media-object img-circle bio-image",
                       data: { toggle: "popover", placement: "bottom",
-                              content: "The groom met Yavuz through mutual friend and groomsman Michael Brunell. Yavuz loves fast cars but dislikes chicken and water." }) %>
+                              content: "The groom met Yavuz through mutual friend and groomsman Michael Brunell. He loves fast cars and video games but dislikes chicken and water. Yavuz is a Turkish prince and has dominion over a great number of provinces in his home country. He will be wearing a traditional Turkic bashlyk during the wedding ceremony. Please pronounce his name correctly or he will get extremely angry." }) %>
       </div>
       <div class="media-body media-middle">
         <h4 class="media-heading">Yavuz Kiremit</h4>
@@ -173,8 +173,15 @@ $(function () {
   });
 });
 $(function () {
+  $('#dickie-hidden').mouseout( function () {
+    $(this).hide();
+    $('#dickie').show();
+  });
+});
+$(function () {
   $('[data-toggle="popover"]').popover({
-    container: 'body'
+    container: 'body',
+    html: true
   });
 });
 $(function () {
