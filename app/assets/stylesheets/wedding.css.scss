@@ -1,3 +1,7 @@
+// ------------------
+//   GENERAL
+// ------------------
+
 body { font-size: 1.5em; }
 
 p { margin-bottom: 20px; }
@@ -7,9 +11,12 @@ h1 { padding: 20px 0 50px 0; }
 dt { padding-bottom: 2px; }
 dd { padding-bottom: 10px; }
 
-#gifts {
-  p { margin-bottom: 10px; }
-}
+.section { margin: 70px 0 90px 0; }
+
+
+// ------------------
+//   NAV
+// ------------------
 
 .navbar {
   background: rgba(0,0,0,0.8);
@@ -21,23 +28,10 @@ dd { padding-bottom: 10px; }
   padding-top: 17px;
 }
 
-.cover {
-  color: rgb(255, 255, 255);
-  position: relative;
-  min-height: 500px;
-  background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)); /* For Firefox 3.6 to 15 */
-  background:
-    linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
-    image-url("cover.jpg") no-repeat scroll 40% 0 / cover transparent;
 
-  @media all and (max-width: 600px) {
-    background:
-      linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
-      image-url("cover-small.jpg") no-repeat scroll 40% 0 / cover transparent;
-  }
-}
+// ------------------
+//   LANDING PAGE
+// ------------------
 
 #welcome-text {
   z-index: 100;
@@ -58,10 +52,28 @@ dd { padding-bottom: 10px; }
   }
 }
 
-.section { margin: 70px 0 90px 0; }
 
-#wedding-info { margin-bottom: 50px; }
-#more-info {margin-top: 0; }
+// ------------------
+//   COVER IMAGES
+// ------------------
+
+.cover {
+  color: rgb(255, 255, 255);
+  position: relative;
+  min-height: 500px;
+  background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)); /* For Firefox 3.6 to 15 */
+  background:
+    linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    image-url("cover.jpg") no-repeat scroll 40% 0 / cover transparent;
+
+  @media all and (max-width: 600px) {
+    background:
+      linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+      image-url("cover-small.jpg") no-repeat scroll 40% 0 / cover transparent;
+  }
+}
 
 .section-cover {
   margin: 10px 0 50px 0;
@@ -87,26 +99,12 @@ dd { padding-bottom: 10px; }
   #contact-cover { background: image-url("contact-small.jpg") no-repeat scroll 60% 0 / cover transparent; }
 }
 
-#gmap iframe, #gmap object, #gmap embed { width: 100%; }
 
+// ------------------
+//   OUR STORY
+// ------------------
 
-.party-left { padding-right: 30px; }
-.party-right { padding-left: 30px; }
 .bio { margin-bottom: 30px; }
-.bio-more {
-  padding-top: 10px;
-  max-width: 300px;
-  float: right;
-  display: none;
-}
-.popover { max-width: 500px; }
-
-#dickie-hidden {
-  display: none;
-}
-
-.hotels { margin-top: 20px; }
-
 .carousel { max-width: 1000px; }
 .carousel-caption { font-size: 1.3em; }
 .carousel-caption {
@@ -118,6 +116,50 @@ dd { padding-bottom: 10px; }
   p { margin-bottom: 5px; }
 }
 .carousel-indicators { bottom: 5px; }
+
+
+// ------------------
+//   WEDDING INFO
+// ------------------
+
+#gmap iframe, #gmap object, #gmap embed { width: 100%; }
+#wedding-info { margin-bottom: 50px; }
+#more-info {margin-top: 0; }
+
+
+// ------------------
+//   WEDDING PARTY
+// ------------------
+
+.party-left { padding-right: 30px; }
+.party-right { padding-left: 30px; }
+.popover { max-width: 500px; }
+#dickie-hidden { display: none; }
+
+
+// ------------------
+//   HOTELS
+// ------------------
+
+.hotels { margin-top: 20px; }
+
+
+// ------------------
+//   GIFTS
+// ------------------
+
+#gifts p { margin-bottom: 10px; }
+
+
+// ------------------
+//   CONTACT
+// ------------------
+
+
+
+// ------------------
+//   FOOTER
+// ------------------
 
 footer {
   color: white;
