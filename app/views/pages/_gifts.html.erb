@@ -3,16 +3,16 @@
   <h1 class="text-center">Gifts</h1>
 
   <div class="col-sm-6 col-sm-offset-3">
-    <%= @wedding.gift_info.html_safe %>
+    <%= wedding.gift_info.html_safe %>
     <ol>
-      <li><strong>Honeymoon Registry</strong>
-        <p>We are very fortunate to have a lot of the "essential" home items a newly engaged couple needs. We hope you find this registry as a way to help us make our perfect honeymoon come true!</p>
-        <%= link_to image_tag("tj-logo.png", alt: "Traveler's Joy"), "http://www.travelersjoy.com/beckyandnickwedding/" %>
-      </li>
-      <br>
-      <li><strong>Retail Registry</strong>
-        <p>We will be adding a link here soon to our retail registry where you can find specific items we are looking for.</p>
-      </li>
+      <% wedding.gift_options.each do |option| %>
+        <li><strong><%= option['title'] %></strong>
+          <%= option['description'].html_safe %>
+          <% if option['img'] %>
+            <%= link_to image_tag(option['img']['file_name'], alt: option['img']['alt']), option['img']['url'] %>
+          <% end %>
+        </li><br>
+      <% end %>
     </ol>
   </div>
 </div>

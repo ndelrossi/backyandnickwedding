@@ -3,9 +3,9 @@
   <div class="col-sm-3 col-sm-offset-3 col-md-2 col-md-offset-4">
     <dl>
       <dt>Date</dt>
-      <dd><%= @wedding.date %></dd>
+      <dd><%= wedding.date %></dd>
       <dt>Time</dt>
-      <dd><%= @wedding.time %></dd>
+      <dd><%= wedding.time %></dd>
     </dl>
   </div>
   <div class="col-sm-3 col-md-2">
@@ -13,16 +13,16 @@
       <dt>Ceremony and Reception</dt>
       <dd>
         <address>
-          <%= @wedding.location['name'] %><br>
-          <%= @wedding.location['street'] %><br>
-          <%= @wedding.city_and_state %> <%= @wedding.location['zip'] %>
+          <%= wedding.location['name'] %><br>
+          <%= wedding.location['street'] %><br>
+          <%= wedding.city_and_state %> <%= wedding.location['zip'] %>
         </address>
       </dd>
     </dl>
   </div>
   <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
     <dl>
-      <% @wedding.more_info_items.each do |item| %>
+      <% wedding.more_info_items.each do |item| %>
         <dt><%= item['title'] %></dt>
         <dd><%= item['text'] %></dd>
       <% end %>

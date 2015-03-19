@@ -3,10 +3,10 @@
   <h1 class="text-center">Accommodations</h1>
 
   <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-    <%= @wedding.hotel_info.html_safe %>
+    <%= wedding.hotel_info.html_safe %>
   </div>
     <div class="col-sm-4 col-sm-offset-4 hotels text-center">
-      <% @wedding.hotels.each do |hotel| %>
+      <% wedding.hotels.each do |hotel| %>
         <address>
           <strong><%= hotel['name'] %></strong><br>
           <%= hotel['address_line_1'] %><br>

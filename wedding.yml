@@ -58,6 +58,21 @@ gift_info: |
     October 17th is more than enough for us, but if you really want to
     get us something, you can find some suggestions here.</p>
 
+gift_options:
+  - title: Honeymoon Registry
+    description: |
+      <p>We are very fortunate to have a lot of the "essential" home items
+      a newly engaged couple needs. We hope you find this registry as a way
+      to help us make our perfect honeymoon come true!</p>
+    img:
+      file_name: tj-logo.png
+      alt: Traveler's Joy
+      url: http://www.travelersjoy.com/beckyandnickwedding/
+
+  - title: Retail Registry
+    description: |
+      <p>We will be adding a link here soon to our retail registry where
+      you can find specific items we are looking for.</p>
 
 bride:
   name: Becky Champlin

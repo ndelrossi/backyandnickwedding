@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
+  require 'application_helper'
 
   def home
-    @wedding = Wedding.new
   end
 end

@@ -3,22 +3,22 @@
 
     <div class="col-sm-4 col-sm-offset-2 bio">
       <%= image_tag("becky.jpg", class: "img-responsive img-rounded", alt: "Becky") %>
-      <h3><%= @wedding.bride['name'] %></h3>
-      <%= @wedding.bride['bio'].html_safe %>
+      <h3><%= wedding.bride['name'] %></h3>
+      <%= wedding.bride['bio'].html_safe %>
     </div>
 
     <div class="col-sm-4 bio">
       <%= image_tag("nick.jpg", class: "img-responsive img-rounded", alt: "Nick") %>
-      <h3><%= @wedding.groom['name'] %></h3>
-      <%= @wedding.groom['bio'].html_safe %>
+      <h3><%= wedding.groom['name'] %></h3>
+      <%= wedding.groom['bio'].html_safe %>
     </div>
 
     <div class="col-sm-8 col-sm-offset-2 bio">
       <% if not mobile? %>
         <%= render 'our_story_photos' %>
       <% end %>
-      <h3><%= @wedding.relationship['title'] %></h3>
-      <%= @wedding.relationship['bio'].html_safe %>
+      <h3><%= wedding.relationship['title'] %></h3>
+      <%= wedding.relationship['bio'].html_safe %>
     </div>
 
 </div>
