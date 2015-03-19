@@ -2,8 +2,13 @@ class Wedding
   require 'open-uri'
 
   def initialize
-    # @data = YAML.load_file("#{Rails.root}/wedding.yml")
-    @data = YAML.parse(open('https://raw.githubusercontent.com/ndelrossi/beckyandnickwedding/master/wedding.yml')).to_ruby
+    wedding_uri = 'https://raw.githubusercontent.com/ndelrossi/beckyandnickwedding/master/wedding.yml'
+
+    if Rails.env.production?
+      @data = YAML.parse(open(wedding_uri)).to_ruby || YAML.load_file("#{Rails.root}/wedding.yml")
+    else
+      @data = YAML.load_file("#{Rails.root}/wedding.yml")
+    end
   end
 
   def city_and_state

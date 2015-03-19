@@ -3,7 +3,7 @@
   <h1 class="text-center">Gifts</h1>
 
   <div class="col-sm-6 col-sm-offset-3">
-    <p>We are so excited to have all our friends and family with us to celebrate our wedding! Just having everyone together at Codman on October 17th is more than enough for us, but if you really want to get us something, you can find some suggestions here.</p>
+    <%= @wedding.gift_info.html_safe %>
     <ol>
       <li><strong>Honeymoon Registry</strong>
         <p>We are very fortunate to have a lot of the "essential" home items a newly engaged couple needs. We hope you find this registry as a way to help us make our perfect honeymoon come true!</p>

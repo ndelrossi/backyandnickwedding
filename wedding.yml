@@ -11,8 +11,58 @@ location:
     The Codman Estate is about 30 minutes west of Boston. It is
     located near Walden Pond in Lincoln, MA.
 
+more_info_items:
+  - title: Parking
+    text: |
+      There is a large parking lot on the estate with plenty of room
+      for everyone.
+
+  - title: Children
+    text: |
+      While children are a joy, we respectfully ask that this be an
+      Adults Only ceremony and reception, with the only exceptions
+      being our flower girl and ring bearer.
+
+hotel_info: |
+    <p>We have reserved a block of rooms for the weekend at the Boston
+    Marriott Burlington, which is a twenty minute drive from the Codman
+    Estate. The hotel has given us a discounted rate of $169 per night.
+    Rooms are available for Friday/Saturday night. The hotel requires a
+    two night minimum stay for this deal.  To reserve a room in our hotel
+    block please call the number below and mention the Champlin/DelRossi
+    wedding. The deadline to reserve a room at the discounted rate is
+    September 16, 2015.</p>
+
+    <p>More info to come on rooms at the Colonial Inn.</p>
+
+    <p><strong>Please be advised: </strong>All guests planning to stay
+    in hotels should book as early as possible. Our wedding is on the
+    same weekend as The Head Of The Charles Regatta which attracts more
+    than 400,000 spectators. Hotels in the area have advised us that they
+    often sell out during this weekend.</p>
+
+hotels:
+  - name: Concord's Colonial Inn
+    address_line_1: 48 Monument Square
+    address_line_2: Concord, MA 01742
+    phone: (800) 370-9200
+
+  - name: Boston Marriott Burlington
+    address_line_1: One Burlington Mall Road
+    address_line_2: Burlington, MA 01803
+    phone: (781) 229-6565
+
+gift_info: |
+    <p>We are so excited to have all our friends and family with us to
+    celebrate our wedding! Just having everyone together at Codman on
+    October 17th is more than enough for us, but if you really want to
+    get us something, you can find some suggestions here.</p>
+
+
 bride:
   name: Becky Champlin
+  email: beckychamplin82@gmail.com
+  phone: (401) 219-9067
   bio: |
     <p>Becky grew up in Coventry, RI, where she had a perfectly healthy
     interest in true crime and serial killers. (No one was concerned
@@ -41,6 +91,8 @@ bride:
 
 groom:
   name: Nick DelRossi
+  email: nickwtf@gmail.com
+  phone: (774) 239-7121
   bio: |
     <p>Nick grew up in Burlington, MA, a suburb north of Boston. As a child he
     was into sports, medieval history, and video games and during high

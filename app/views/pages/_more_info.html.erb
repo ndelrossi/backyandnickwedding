@@ -3,9 +3,9 @@
   <div class="col-sm-3 col-sm-offset-3 col-md-2 col-md-offset-4">
     <dl>
       <dt>Date</dt>
-      <dd>October 17 2015</dd>
+      <dd><%= @wedding.date %></dd>
       <dt>Time</dt>
-      <dd>TBD</dd>
+      <dd><%= @wedding.time %></dd>
     </dl>
   </div>
   <div class="col-sm-3 col-md-2">
@@ -13,19 +13,19 @@
       <dt>Ceremony and Reception</dt>
       <dd>
         <address>
-          Codman Estate<br>
-          34 Codman Rd<br>
-          Lincoln, MA 01773
+          <%= @wedding.location['name'] %><br>
+          <%= @wedding.location['street'] %><br>
+          <%= @wedding.city_and_state %> <%= @wedding.location['zip'] %>
         </address>
       </dd>
     </dl>
   </div>
   <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
     <dl>
-      <dt>Parking</dt>
-      <dd>There is a large parking lot on the estate with plenty of room for everyone.</dd>
-      <dt>Children</dt>
-      <dd>While children are a joy, we respectfully ask that this be an Adults Only ceremony and reception, with the only exceptions being our flower girl and ring bearer.</dd>
+      <% @wedding.more_info_items.each do |item| %>
+        <dt><%= item['title'] %></dt>
+        <dd><%= item['text'] %></dd>
+      <% end %>
     </dl>
   </div>
 </div>

@@ -3,12 +3,12 @@
   <h1 class="text-center">Contact Info</h1>
   <div class="col-sm-4 col-sm-offset-4 text-center">
     <dl>
-      <dt>Becky Champlin</dt>
-      <dd>beckychamplin82@gmail.com<br>
-      <abbr title="Phone">P:</abbr> (401) 219-9067</dd><br>
-      <dt>Nick DelRossi</dt>
-      <dd>nickwtf@gmail.com<br>
-      <abbr title="Phone">P:</abbr> (774) 239-7121</dd><br>
+      <dt><%= @wedding.bride['name'] %></dt>
+      <dd><%= @wedding.bride['email'] %><br>
+      <abbr title="Phone">P:</abbr> <%= @wedding.bride['phone'] %></dd><br>
+      <dt><%= @wedding.groom['name'] %></dt>
+      <dd><%= @wedding.groom['email'] %><br>
+      <abbr title="Phone">P:</abbr> <%= @wedding.groom['phone'] %></dd><br>
     </dl>
   </div>
 </div>
