@@ -76,6 +76,7 @@ gift_options:
 
 bride:
   name: Becky Champlin
+  img: becky.jpg
   email: beckychamplin82@gmail.com
   phone: (401) 219-9067
   bio: |
@@ -106,6 +107,7 @@ bride:
 
 groom:
   name: Nick DelRossi
+  img: nick.jpg
   email: nickwtf@gmail.com
   phone: (774) 239-7121
   bio: |

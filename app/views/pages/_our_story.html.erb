@@ -2,13 +2,13 @@
   <h1 class="text-center">Our Story</h1>
 
     <div class="col-sm-4 col-sm-offset-2 bio">
-      <%= image_tag("becky.jpg", class: "img-responsive img-rounded", alt: "Becky") %>
+      <%= image_tag(wedding.bride['img'], class: "img-responsive img-rounded", alt: wedding.bride['name']) %>
       <h3><%= wedding.bride['name'] %></h3>
       <%= wedding.bride['bio'].html_safe %>
     </div>
 
     <div class="col-sm-4 bio">
-      <%= image_tag("nick.jpg", class: "img-responsive img-rounded", alt: "Nick") %>
+      <%= image_tag(wedding.groom['img'], class: "img-responsive img-rounded", alt: wedding.groom['name']) %>
       <h3><%= wedding.groom['name'] %></h3>
       <%= wedding.groom['bio'].html_safe %>
     </div>
