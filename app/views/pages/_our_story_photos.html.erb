@@ -1,91 +1,21 @@
 <div id="carousel-our-story" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#carousel-our-story" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-our-story" data-slide-to="1"></li>
-    <li data-target="#carousel-our-story" data-slide-to="2"></li>
-    <li data-target="#carousel-our-story" data-slide-to="3"></li>
-    <li data-target="#carousel-our-story" data-slide-to="4"></li>
-    <li data-target="#carousel-our-story" data-slide-to="5"></li>
-    <li data-target="#carousel-our-story" data-slide-to="6"></li>
-    <li data-target="#carousel-our-story" data-slide-to="7"></li>
-    <li data-target="#carousel-our-story" data-slide-to="8"></li>
-    <li data-target="#carousel-our-story" data-slide-to="9"></li>
-    <li data-target="#carousel-our-story" data-slide-to="10"></li>
-    <li data-target="#carousel-our-story" data-slide-to="11"></li>
+    <% wedding.photo_slider.each_with_index do |slide, index| %>
+      <li data-target="#carousel-our-story" data-slide-to=<%= "#{index}" %><%= "class='active'" if index == 0 %>></li>
+    <% end %>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
-    <div class="item active">
-      <%= image_tag("slide_proposal.jpg") %>
-      <div class="carousel-caption">
-        <p>The bench in Hawaii where Nick proposed to Becky</p>
+    <% wedding.photo_slider.each_with_index do |slide, index| %>
+      <div class="item <%= 'active' if index == 0 %>">
+        <%= image_tag(slide['img']) %>
+        <div class="carousel-caption">
+          <p><%= slide['caption'] %></p>
+        </div>
       </div>
-    </div>
-    <div class="item">
-      <%= image_tag("slide_arenal.jpg") %>
-      <div class="carousel-caption">
-        <p>Arenal volcano in Costa Rica</p>
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag("slide_san_diego.jpg") %>
-      <div class="carousel-caption">
-        <p>San Diego</p>
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag("slide_pippa.jpg") %>
-      <div class="carousel-caption">
-        <p>Pippa the cat in her shark bed</p>
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag("slide_ashley_tri.jpg") %>
-      <div class="carousel-caption">
-        <p>Cheering co Maid of Honor Ashley on at Timberman Half Ironman</p>
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag("slide_apple_picking.jpg") %>
-      <div class="carousel-caption">
-        <p>Apple picking with the ring bearer and flower girl</p>
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag("slide_guys_bar.jpg") %>
-      <div class="carousel-caption">
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag("slide_julie_bday.jpg") %>
-      <div class="carousel-caption">
-        <p>Celebrating Julie’s birthday at Shoppers Cafe in Waltham</p>
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag("slide_team_vag.jpg") %>
-      <div class="carousel-caption">
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag("slide_gentlemen.jpg") %>
-      <div class="carousel-caption">
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag("slide_murray_stealing.jpg") %>
-      <div class="carousel-caption">
-        <p>Groomsman Mike Murray trying to steal Becky</p>
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag("slide_dancing.jpg") %>
-      <div class="carousel-caption">
-        <p>Becky and Taylor showing some moves</p>
-      </div>
-    </div>
+    <% end %>
   </div>
 
   <!-- Controls -->

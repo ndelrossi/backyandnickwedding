@@ -75,6 +75,43 @@ gift_options:
       <p>We will be adding a link here soon to our retail registry where
       you can find specific items we are looking for.</p>
 
+photo_slider:
+  - img: slide_proposal.jpg
+    caption: The bench in Hawaii where Nick proposed to Becky
+
+  - img: slide_arenal.jpg
+    caption: Arenal volcano in Costa Rica
+
+  - img: slide_san_diego.jpg
+    caption: San Diego
+
+  - img: slide_pippa.jpg
+    caption: Pippa the cat in her shark bed
+
+  - img: slide_ashley_tri.jpg
+    caption: Cheering co Maid of Honor Ashley on at Timberman Half Ironman
+
+  - img: slide_apple_picking.jpg
+    caption: Apple picking with the ring bearer and flower girl
+
+  - img: slide_guys_bar.jpg
+    caption: Drinks with the groomsmen in Waltham
+
+  - img: slide_julie_bday.jpg
+    caption: Celebrating Julie’s birthday at Shoppers Cafe in Waltham
+
+  - img: slide_team_vag.jpg
+    caption:
+
+  - img: slide_gentlemen.jpg
+    caption: Some fine gentlemen
+
+  - img: slide_murray_stealing.jpg
+    caption: Groomsman Mike Murray trying to steal Becky from Nick
+
+  - img: slide_dancing.jpg
+    caption: Becky and Taylor showing some moves
+
 bride:
   name: Becky Champlin
   img: becky.jpg
