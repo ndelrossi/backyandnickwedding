@@ -18,92 +18,31 @@
     <% end %>
   </div>
   <div class="col-sm-5 bio-container">
-    <div class="media">
-      <div class="media-left party-right">
-        <%= image_tag("mikedelrossi.jpg", class: "media-object img-circle bio-image",
-                      data: { toggle: "popover", placement: "bottom",
-                              content: "Mike is the groom’s older brother. They have a strong relationship despite spending the first 15 years of their lives constantly engaged in brotherly fighting. Mike is married to bridesmaid Melissa and has two great kids named Evan and Anna. Before he had children Mike enjoyed cycling, snowboarding, and sleeping. Nick was the co best man at Mike’s wedding and might have said a few possibly derogatory remarks about Mike in his speech. Is revenge coming?" }) %>
+    <% wedding.groomsmen.each do |groomsman| %>
+      <div class="media">
+        <div class="media-left party-right">
+          <%= image_tag(groomsman['img'], class: "media-object img-circle bio-image", id: groomsman['name'].delete(' '),
+                        data: { toggle: "popover", placement: "bottom",
+                                content: groomsman['bio'] }) %>
+          <% if groomsman['name'] == "Michael Brunell" %>
+            <%= image_tag(groomsman['img_hidden'], id: "dickie-hidden", class: "media-object img-circle bio-image",
+                          data: { toggle: "popover", placement: "bottom",
+                                  content: groomsman['bio_hidden'] }) %>
+          <% end %>
+        </div>
+        <div class="media-body media-middle">
+          <h4 class="media-heading"><%= groomsman['name'] %></h4>
+          <%= groomsman['title'].html_safe %>
+        </div>
       </div>
-      <div class="media-body media-middle">
-        <h4 class="media-heading">Mike DelRossi</h4>
-        Best Man
-      </div>
-    </div>
-    <div class="media">
-      <div class="media-left party-right">
-        <%= image_tag("mikemurray.jpg", class: "media-object img-circle bio-image",
-                      data: { toggle: "popover", placement: "bottom",
-                              content: "Mike and the groom began their relationship as bitter enemies, arguing over which server tool groomsman Michael Brunell should use to connect to the computer game Counter-Strike. Eventually they were able to form a mutual respect for each other and became friends. Mike and the groom ended up living together in two locations in Worcester. He is dating bridesmaid Taylor and together they are parents to an unsightly dog-child named Duncan. Mike will also be marrying Becky and Nick." }) %>
-      </div>
-      <div class="media-body media-middle">
-        <h4 class="media-heading">Mike Murray</h4>
-        Groomsman<br>
-        Justice of the Peace
-      </div>
-    </div>
-    <div class="media party-right">
-      <div class="media-left">
-        <%= image_tag("andyparmenter.jpg", class: "media-object img-circle bio-image",
-                      data: { toggle: "popover", placement: "bottom",
-                              content: "Andy and the groom met while working at Papa Ginos around 2003. Nick was tasked with the job of training Andy on how to make food. This was a disaster for the store because Nick did not care about training and Andy had no desire to learn. This mutual apathy for their jobs led to a strong friendship and also a financial loss for Papa Ginos. Andy and Nick share an interest in uplifting poetry, 90s computer games, and unsafe ocean conditions." }) %>
-      </div>
-      <div class="media-body media-middle">
-        <h4 class="media-heading">Andy Parmenter</h4>
-        Groomsman
-      </div>
-    </div>
-    <div class="media party-right">
-      <div class="media-left">
-        <%= image_tag("brianlauritsen.jpg", class: "media-object img-circle bio-image",
-                      data: { toggle: "popover", placement: "bottom",
-                              content: "Brian and the groom met as dorm neighbors at Worcester State College. They did not even realize they were neighbors for months and it wasn’t until social situations were forced on them that they had any interaction. However, soon after meeting they realized that they shared both a passion and a complete lack of talent for playing guitar. This resulted in a great friendship and a decade long attempt by both to become rock stars. They remain great friends today but unfortunately they still don’t have any talent for playing guitar." }) %>
-      </div>
-      <div class="media-body media-middle">
-        <h4 class="media-heading">Brian Lauritsen</h4>
-        Groomsman
-      </div>
-    </div>
-    <div class="media party-right">
-      <div class="media-left">
-        <%= image_tag("joecarbeau.jpg", class: "media-object img-circle bio-image",
-                      data: { toggle: "popover", placement: "bottom",
-                              content: "Joe grew up two houses down from the groom in Burlington, MA. They met when Nick was less than a year old and have been great friends ever since. Joe and the groom spent their teenage years playing basketball and eating big meals. Rumor has it Joe can still easily dunk a basketball. He is also a gentleman-scholar and a world-renowned expert on 1990s boy bands." }) %>
-      </div>
-      <div class="media-body media-middle">
-        <h4 class="media-heading">Joe Carbeau</h4>
-        Groomsman
-      </div>
-    </div>
-    <div class="media party-right">
-      <div class="media-left">
-        <%= image_tag("michaelbrunell.jpg", id: "dickie", class: "media-object img-circle bio-image") %>
-        <%= image_tag("michaelbrunell-hidden.jpg", id: "dickie-hidden", class: "media-object img-circle bio-image",
-                      data: { toggle: "popover", placement: "bottom",
-                              content: "Michael \“Dickie\” Brunell and the groom met while working at Papa Ginos in Worcester over a decade ago. Nick knew instantly after Dickie was hired that they would become great friends but convincing Dickie of that took weeks of negotiations. Eventually both sides were able to agree to the contract terms and the famous friendship deal pictured above was struck. The deal is set to expire a month before the wedding but hopefully both sides can agree on a contract extension." }) %>
-      </div>
-      <div class="media-body media-middle">
-        <h4 class="media-heading">Michael Brunell</h4>
-        Groomsman
-      </div>
-    </div>
-    <div class="media party-right">
-      <div class="media-left">
-        <%= image_tag("yavuzkiremit.jpg", class: "media-object img-circle bio-image",
-                      data: { toggle: "popover", placement: "bottom",
-                              content: "The groom met Yavuz through mutual friend and groomsman Michael Brunell. He loves fast cars and video games but dislikes chicken and water. Yavuz is a Turkish prince and has dominion over a great number of provinces in his home country. He will be wearing a traditional Turkic bashlyk during the wedding ceremony. Please pronounce his name correctly or he will get extremely angry." }) %>
-      </div>
-      <div class="media-body media-middle">
-        <h4 class="media-heading">Yavuz Kiremit</h4>
-        Groomsman
-      </div>
-    </div>
+    <% end %>
   </div>
 </div>
 
 <script>
 
 $(function () {
-  $('#dickie').hover( function () {
+  $('#MichaelBrunell').hover( function () {
     $(this).hide();
     $('#dickie-hidden').show();
   });
@@ -111,7 +50,7 @@ $(function () {
 $(function () {
   $('#dickie-hidden').mouseout( function () {
     $(this).hide();
-    $('#dickie').show();
+    $('#MichaelBrunell').show();
   });
 });
 $(function () {
