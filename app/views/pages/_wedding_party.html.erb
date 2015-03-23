@@ -40,30 +40,22 @@
 </div>
 
 <script>
-
-$(function () {
-  $('#MichaelBrunell').hover( function () {
-    $(this).hide();
-    $('#dickie-hidden').show();
-  });
+$('#MichaelBrunell').hover( function () {
+  $(this).hide();
+  $('#dickie-hidden').show();
 });
-$(function () {
-  $('#dickie-hidden').mouseout( function () {
-    $(this).hide();
-    $('#MichaelBrunell').show();
-  });
+$('#dickie-hidden').mouseout( function () {
+  $(this).hide();
+  $('#MichaelBrunell').show();
 });
-$(function () {
-  $('[data-toggle="popover"]').popover({
-    container: 'body',
-    html: true
-  });
+$('[data-toggle="popover"]').popover({
+  container: 'body',
+  html: true,
+  trigger: 'hover click'
 });
-$(function () {
-  $('.bio-image').hover( function () {
-    $( this ).popover('show');
-  }, function() {
-    $( this ).popover('hide');
-  });
-});
+//$('.bio-image').hover( function () {
+//  $( this ).popover('show');
+//}, function() {
+//  $( this ).popover('hide');
+//});
 </script>
