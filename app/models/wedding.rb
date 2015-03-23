@@ -1,5 +1,4 @@
 class Wedding
-  require 'open-uri'
 
   def initialize
     @data = YAML.load_file("#{Rails.root}/wedding.yml")
