@@ -46,6 +46,10 @@ hotel_info: |
     the code CHAMPLIN/DELROSSI. Select dates and follow the steps
     to complete the reservation. The deadline to reserve a room at the
     discounted rate is August 21, 2015.</p>
+    
+    <p>Our third option is the <strong>Best Western at Historic Concord</strong>.
+    We are currently in the process of securing a block of rooms there. We 
+    will update the information here when we do.</p>
 
     <p><strong>Please be advised: </strong>All guests planning to stay
     in hotels should book as early as possible. Our wedding is on the
@@ -63,6 +67,11 @@ hotels:
     address_line_1: 48 Monument Square
     address_line_2: Concord, MA 01742
     phone: (800) 370-9200
+    
+  - name: Best Western at Historic Concord
+    address_line_1: 740 Elm Street
+    address_line_2: Concord, MA 01742
+    phone: (978) 369-6100
 
 gift_info: |
     <p>We are so excited to have all our friends and family with us to
@@ -333,7 +342,7 @@ groomsmen:
     title: Groomsman
     img: andyparmenter.jpg
     bio: |
-      Andy and the groom met while working at Papa Ginos around 2003. Nick
+      Andy and the groom met while working at Papa Ginos around 2001. Nick
       was tasked with the job of training Andy on how to make food. This was
       a disaster for the store because Nick did not care about training and
       Andy had no desire to learn. This mutual apathy for their jobs led to a
