@@ -44,7 +44,8 @@ hotel_info: |
     and click “Book Now”. Then in the burgundy date box click on “Enter
     your access or promotional code”, select “Group Code” and enter
     the code CHAMPLIN/DELROSSI. Select dates and follow the steps
-    to complete the reservation.</p>
+    to complete the reservation. The deadline to reserve a room at the
+    discounted rate is August 21, 2015.</p>
 
     <p><strong>Please be advised: </strong>All guests planning to stay
     in hotels should book as early as possible. Our wedding is on the
@@ -53,15 +54,15 @@ hotel_info: |
     often sell out during this weekend.</p>
 
 hotels:
-  - name: Concord's Colonial Inn
-    address_line_1: 48 Monument Square
-    address_line_2: Concord, MA 01742
-    phone: (800) 370-9200
-
   - name: Boston Marriott Burlington
     address_line_1: One Burlington Mall Road
     address_line_2: Burlington, MA 01803
     phone: (781) 229-6565
+
+  - name: Concord's Colonial Inn
+    address_line_1: 48 Monument Square
+    address_line_2: Concord, MA 01742
+    phone: (800) 370-9200
 
 gift_info: |
     <p>We are so excited to have all our friends and family with us to
