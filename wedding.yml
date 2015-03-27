@@ -46,9 +46,9 @@ hotel_info: |
     the code CHAMPLIN/DELROSSI. Select dates and follow the steps
     to complete the reservation. The deadline to reserve a room at the
     discounted rate is August 21, 2015.</p>
-    
+
     <p>Our third option is the <strong>Best Western at Historic Concord</strong>.
-    We are currently in the process of securing a block of rooms there. We 
+    We are currently in the process of securing a block of rooms there. We
     will update the information here when we do.</p>
 
     <p><strong>Please be advised: </strong>All guests planning to stay
@@ -67,7 +67,7 @@ hotels:
     address_line_1: 48 Monument Square
     address_line_2: Concord, MA 01742
     phone: (800) 370-9200
-    
+
   - name: Best Western at Historic Concord
     address_line_1: 740 Elm Street
     address_line_2: Concord, MA 01742
@@ -334,7 +334,7 @@ groomsmen:
       over which server tool groomsman Michael Brunell should use to connect
       to the computer game Counter-Strike. Eventually they were able to form a
       mutual respect for each other and became friends. Mike and the groom
-      ended up living together in two locations in Worcester. He is dating
+      ended up living together in two locations in Worcester. He is engaged to
       bridesmaid Taylor and together they are parents to an unsightly
       dog-child named Duncan. Mike will also be marrying Becky and Nick.
 
