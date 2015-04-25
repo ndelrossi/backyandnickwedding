@@ -92,8 +92,12 @@ gift_options:
 
   - title: Retail Registry
     description: |
-      <p>We will be adding a link here soon to our retail registry where
-      you can find specific items we are looking for.</p>
+      <p>We have set up a wedding registry with Amazon.com where
+      you can find some specific items we are looking for.</p>
+    img:
+      file_name: amazon.png
+      alt: Amazon
+      url: https://www.amazon.com/gp/registry/wedding/1KY2E1TQUH51G
 
 photo_slider:
   - img: slide_proposal.jpg
