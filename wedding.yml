@@ -90,14 +90,22 @@ gift_options:
       alt: Traveler's Joy
       url: http://www.travelersjoy.com/beckyandnickwedding/
 
-  - title: Retail Registry
+  - title: Amazon Registry
     description: |
       <p>We have set up a wedding registry with Amazon.com where
       you can find some specific items we are looking for.</p>
     img:
       file_name: amazon.png
       alt: Amazon
-      url: https://www.amazon.com/gp/registry/wedding/1KY2E1TQUH51G
+      url: http://www.amazon.com/gp/registry/wedding/1KY2E1TQUH51G
+
+  - title: Crate & Barrel Registry
+    description: |
+      <p>We have a second retail registry with Crate & Barrel for additional items.</p>
+    img:
+      file_name: crate_and_barrel.png
+      alt: Crate & Barrel
+      url: http://www.crateandbarrel.com/gift-registry/becky-champlin-and-nick-delrossi/r5324044
 
 photo_slider:
   - img: slide_proposal.jpg
