@@ -12,6 +12,14 @@ location:
     located near Walden Pond in Lincoln, MA.
 
 more_info_items:
+  - title: Dinner choices
+    text: |
+      <ol>
+      <li>Tagliatelle Bolognese</li>
+      <li>Herb Roasted Chicken Breast with lite Herb Au jus</li>
+      <li>Polenta Napoleon with Garlic, Spinach, Grilled Tomatoes, and Onions over Smokey Tomato Coulis</li>
+      </ol>
+
   - title: Parking
     text: |
       There is a large parking lot on the estate with plenty of room

@@ -24,7 +24,7 @@
     <dl>
       <% wedding.more_info_items.each do |item| %>
         <dt><%= item['title'] %></dt>
-        <dd><%= item['text'] %></dd>
+        <dd><%= item['text'].html_safe %></dd>
       <% end %>
     </dl>
   </div>
